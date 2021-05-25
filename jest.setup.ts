@@ -1,11 +1,23 @@
 jest.mock('pg', () => {
-  const mPool = {
-    connect: async () => ({
-      query: jest.fn().mockReturnValue(Promise.resolve({})),
-      release: jest.fn(),
-    }),
+  const mClient = {
+    query: jest.fn().mockReturnValue(Promise.resolve({})),
+    release: jest.fn(),
   };
-  return {Pool: jest.fn(() => mPool)};
+  const mPool = {
+    connect: async () => mClient,
+  };
+  return {
+    Pool: jest.fn(() => mPool),
+  };
+});
+
+jest.mock('fs', () => {
+  const readdirSync = jest.fn();
+  const readFileSync = jest.fn();
+  return {
+    readdirSync,
+    readFileSync,
+  };
 });
 
 export {};

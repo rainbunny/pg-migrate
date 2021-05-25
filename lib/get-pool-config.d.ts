@@ -1,4 +1,4 @@
-import type { ExtendedPoolConfig } from '@rainbunny/pg-extensions';
+import type { PoolConfig } from 'pg';
 export declare const getPoolConfig: (params: {
     [name: string]: string;
-}) => ExtendedPoolConfig | undefined;
+}) => PoolConfig | undefined;

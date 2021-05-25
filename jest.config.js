@@ -3,6 +3,6 @@ module.exports = {
   testPathIgnorePatterns: ['<rootDir>/node_modules/'],
   moduleNameMapper: {},
   collectCoverage: true,
-  collectCoverageFrom: ['src/**/*.{ts,tsx}'],
+  collectCoverageFrom: ['src/{!(migrate),}.{ts,tsx}'],
   verbose: true,
 };

@@ -7,8 +7,7 @@
     "url": "https://github.com/rainbunny/pg-migrate/issues"
   },
   "dependencies": {
-    "@rainbunny/pg-extensions": "^0.5.1",
-    "rxjs": "^7.0.1"
+    "pg": "^8.6.0"
   },
   "description": "Add more functions into the original pg package",
   "devDependencies": {
