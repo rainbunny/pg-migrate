@@ -1,7 +1,7 @@
 {
   "author": "Thinh Tran",
   "bin": {
-    "pg-migrate": "./lib/migrate.js"
+    "pg-migrate": "./lib/migrate-database.js"
   },
   "bugs": {
     "url": "https://github.com/rainbunny/pg-migrate/issues"

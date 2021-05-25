@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 import { PoolConfig } from 'pg';
 export interface MigrateDatabaseParams {
     mode: 'up' | 'down';
