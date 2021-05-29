@@ -21,11 +21,14 @@ Migrate Postgres database with SQL scripts. The package is written in Typescript
 **develop:**
 ![CI-develop](https://github.com/thinhtran3588/pg-migrate/workflows/CI-develop/badge.svg?branch=develop)
 [![codecov](https://codecov.io/gh/thinhtran3588/pg-migrate/branch/develop/graph/badge.svg)](https://codecov.io/gh/thinhtran3588/pg-migrate/branch/develop)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=thinhtran3588_pg-migrate&branch=develop&metric=alert_status)](https://sonarcloud.io/dashboard?id=thinhtran3588_pg-migrate&branch=develop)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=thinhtran3588_pg-migrate&branch=develop&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=thinhtran3588_pg-migrate&branch=develop)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=thinhtran3588_pg-migrate&branch=develop&metric=security_rating)](https://sonarcloud.io/dashboard?id=thinhtran3588_pg-migrate&branch=develop)
 
 ## Installation
 
 ```bash
-yarn add @thinhtran3588/pg-migrate
+yarn add @tqt/pg-migrate
 ```
 
 ## How to use
