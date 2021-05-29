@@ -4,7 +4,7 @@
     "pg-migrate": "./lib/migrate-database.js"
   },
   "bugs": {
-    "url": "https://github.com/rainbunny/pg-migrate/issues"
+    "url": "https://github.com/thinhtran3588/pg-migrate/issues"
   },
   "dependencies": {
     "pg": "^8.6.0"
@@ -38,7 +38,7 @@
   "files": [
     "lib/**/*"
   ],
-  "homepage": "https://github.com/rainbunny/pg-migrate#readme",
+  "homepage": "https://github.com/thinhtran3588/pg-migrate#readme",
   "keywords": [
     "pg",
     "postgres",
@@ -47,10 +47,10 @@
   ],
   "license": "MIT",
   "main": "lib/index.js",
-  "name": "@rainbunny/pg-migrate",
+  "name": "@thinhtran3588/pg-migrate",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rainbunny/pg-migrate.git"
+    "url": "git+https://github.com/thinhtran3588/pg-migrate.git"
   },
   "scripts": {
     "build": "rm -r -f lib && babel src --out-dir lib --extensions \".ts\" --source-maps inline --copy-files && tsc --project tsconfig.definition.json",
