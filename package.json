@@ -9,7 +9,7 @@
   "dependencies": {
     "pg": "^8.6.0"
   },
-  "description": "Add more functions into the original pg package",
+  "description": "Migrate Postgres database with SQL scripts",
   "devDependencies": {
     "@babel/cli": "^7.14.3",
     "@babel/core": "^7.14.3",
