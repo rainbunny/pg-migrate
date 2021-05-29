@@ -14,6 +14,18 @@ describe('migrate', () => {
     return client;
   };
 
+  const verifyClientWithSuccessfulMigration = (client: PoolClient): void => {
+    // run start transaction
+    expect(client.query).toHaveBeenNthCalledWith(1, 'BEGIN');
+    // run only 1 migration script
+    expect(fs.readFileSync).toHaveBeenCalledTimes(1);
+    // run commit transaction
+    expect(client.query).toHaveBeenNthCalledWith(6, 'COMMIT');
+    expect(client.query).toHaveBeenCalledTimes(6);
+    // release client after completing transaction
+    expect(client.release).toHaveBeenCalledTimes(1);
+  };
+
   beforeEach(() => {
     (fs.readdirSync as unknown as jest.Mock).mockClear();
     (fs.readFileSync as unknown as jest.Mock).mockClear();
@@ -40,15 +52,7 @@ describe('migrate', () => {
         }).then(() => client),
       )
       .then((client) => {
-        // run start transaction
-        expect(client.query).toHaveBeenNthCalledWith(1, 'BEGIN');
-        // run only 1 migration script
-        expect(fs.readFileSync).toHaveBeenCalledTimes(1);
-        // run commit transaction
-        expect(client.query).toHaveBeenNthCalledWith(6, 'COMMIT');
-        expect(client.query).toHaveBeenCalledTimes(6);
-        // release client after completing transaction
-        expect(client.release).toHaveBeenCalledTimes(1);
+        verifyClientWithSuccessfulMigration(client);
         done();
       });
   });
@@ -117,15 +121,7 @@ describe('migrate', () => {
         }).then(() => client),
       )
       .then((client) => {
-        // run start transaction
-        expect(client.query).toHaveBeenNthCalledWith(1, 'BEGIN');
-        // run only 1 migration script
-        expect(fs.readFileSync).toHaveBeenCalledTimes(1);
-        // run commit transaction
-        expect(client.query).toHaveBeenNthCalledWith(6, 'COMMIT');
-        expect(client.query).toHaveBeenCalledTimes(6);
-        // release client after completing transaction
-        expect(client.release).toHaveBeenCalledTimes(1);
+        verifyClientWithSuccessfulMigration(client);
         done();
       });
   });
