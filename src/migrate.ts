@@ -58,10 +58,9 @@ const performMigration = ({
   let executor = Promise.resolve();
   if (mode === 'up') {
     versionFilePaths
-      .filter((_versionFilePath, index) => {
-        console.log(_versionFilePath, index, currentVersionIndex, targetVersion);
-        return index > currentVersionIndex && (!targetVersion || index <= targetVersionIndex);
-      })
+      .filter(
+        (_versionFilePath, index) => index > currentVersionIndex && (!targetVersion || index <= targetVersionIndex),
+      )
       .forEach((versionFilePath) => {
         executor = executor
           .then(() => console.log(`Migrating up ${versionFilePath}...`))
@@ -77,7 +76,6 @@ const performMigration = ({
     return executor;
   }
 
-  console.log(targetVersion);
   if (!targetVersion) {
     return Promise.reject(new Error(`Target version is required!`));
   }
