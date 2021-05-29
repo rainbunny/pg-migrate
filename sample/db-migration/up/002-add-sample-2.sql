@@ -1,0 +1,5 @@
+CREATE TABLE sampe2(
+    id UUID DEFAULT uuid_generate_v4 () NOT NULL PRIMARY KEY,
+    name VARCHAR(1000) NOT NULL,
+    author VARCHAR(200) NOT NULL
+);

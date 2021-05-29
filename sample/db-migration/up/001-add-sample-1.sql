@@ -1,0 +1,6 @@
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+CREATE TABLE sampe1(
+    id UUID DEFAULT uuid_generate_v4 () NOT NULL PRIMARY KEY,
+    name VARCHAR(1000) NOT NULL,
+    author VARCHAR(200) NOT NULL
+);
