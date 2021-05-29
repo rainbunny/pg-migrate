@@ -47,7 +47,7 @@
   ],
   "license": "MIT",
   "main": "lib/index.js",
-  "name": "@thinhtran3588/pg-migrate",
+  "name": "@tqt/pg-migrate",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thinhtran3588/pg-migrate.git"
