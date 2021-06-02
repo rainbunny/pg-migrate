@@ -63,5 +63,5 @@
     "validate": "yarn lint && yarn test"
   },
   "types": "lib/index.d.ts",
-  "version": "0.2.8"
+  "version": "0.2.9"
 }
