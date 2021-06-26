@@ -1,6 +1,6 @@
 # pg-migrate
 
-`pg-migrate` is a tool which manages databases' schema & data with SQL scripts.
+`pg-migrate` is a tool that manages databases' schema & data with SQL scripts.
 
 ![npm (scoped)](https://img.shields.io/npm/v/@tqt/pg-migrate)
 ![Typed with TypeScript](https://flat.badgen.net/badge/icon/Typed?icon=typescript&label&labelColor=blue&color=555555)
@@ -13,14 +13,14 @@
 
 **main:**
 ![CI-main](https://github.com/thinhtran3588/pg-migrate/workflows/CI-main/badge.svg)
-[![codecov](https://codecov.io/gh/thinhtran3588/pg-migrate/branch/main/graph/badge.svg)](https://codecov.io/gh/thinhtran3588/pg-migrate)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=thinhtran3588_pg-migrate&metric=coverage)](https://sonarcloud.io/dashboard?id=thinhtran3588_pg-migrate)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=thinhtran3588_pg-migrate&metric=alert_status)](https://sonarcloud.io/dashboard?id=thinhtran3588_pg-migrate)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=thinhtran3588_pg-migrate&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=thinhtran3588_pg-migrate)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=thinhtran3588_pg-migrate&metric=security_rating)](https://sonarcloud.io/dashboard?id=thinhtran3588_pg-migrate)
 
 **develop:**
 ![CI-develop](https://github.com/thinhtran3588/pg-migrate/workflows/CI-develop/badge.svg?branch=develop)
-[![codecov](https://codecov.io/gh/thinhtran3588/pg-migrate/branch/develop/graph/badge.svg)](https://codecov.io/gh/thinhtran3588/pg-migrate/branch/develop)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?branch=develop&project=thinhtran3588_pg-migrate&metric=coverage)](https://sonarcloud.io/dashboard?id=thinhtran3588_pg-migrate&branch=develop)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=thinhtran3588_pg-migrate&branch=develop&metric=alert_status)](https://sonarcloud.io/dashboard?id=thinhtran3588_pg-migrate&branch=develop)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=thinhtran3588_pg-migrate&branch=develop&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=thinhtran3588_pg-migrate&branch=develop)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=thinhtran3588_pg-migrate&branch=develop&metric=security_rating)](https://sonarcloud.io/dashboard?id=thinhtran3588_pg-migrate&branch=develop)
